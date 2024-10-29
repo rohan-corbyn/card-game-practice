@@ -55,10 +55,21 @@ body {
   margin: 0;
 }
 
-.card img {
+.card-image {
   width: 30%;
   height: auto;
 }
+
+.card-image.computer {
+  transform: rotateY(180deg);
+}
+
+.card.computer img {
+  width: 30%;
+  height: auto;
+  transform: rotateX(180deg);
+}
+
 
 .card .infantry {
   content: url("./img/infantry.png");
@@ -86,6 +97,14 @@ body {
 
 #deck .card {
   position: absolute;
+}
+
+#playable-card {
+  cursor: grab;
+}
+
+.hidden {
+  display: none;
 }
 
 #deck .card:nth-child(1) {

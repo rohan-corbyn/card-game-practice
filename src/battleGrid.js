@@ -15,8 +15,6 @@ const battleGrid = (function () {
                 battleGridEle.appendChild(cardSpaceEle);
             }
         }
-
-        addDummyGameState()
     }
 
     const getCardSpaceAtPosition = (row, col) => {
@@ -27,18 +25,16 @@ const battleGrid = (function () {
         for (let row = 0; row < 2; row++) {
             for (let col = 0; col < 1; col++) {
                 getCardSpaceAtPosition(row, col).appendChild(cardGenerator.createCard("archer"));
-
             }
         }
         for (let row = 0; row < 2; row++) {
             for (let col = 1; col < 3; col++) {
                 getCardSpaceAtPosition(row, col).appendChild(cardGenerator.createCard("infantry"));
-
             }
         }
     }
 
-    return { build }
+    return { build, getCardSpaceAtPosition }
 })();
 
 export { battleGrid };
