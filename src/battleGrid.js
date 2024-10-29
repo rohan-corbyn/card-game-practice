@@ -1,3 +1,5 @@
+import { cardGenerator } from "./cardGenerator";
+
 const battleGrid = (function () {
 
     const build = () => {
@@ -24,13 +26,13 @@ const battleGrid = (function () {
     const addDummyGameState = () => {
         for (let row = 0; row < 2; row++) {
             for (let col = 0; col < 1; col++) {
-                getCardSpaceAtPosition(row, col).appendChild(createCard("archer"));
+                getCardSpaceAtPosition(row, col).appendChild(cardGenerator.createCard("archer"));
 
             }
         }
         for (let row = 0; row < 2; row++) {
             for (let col = 1; col < 3; col++) {
-                getCardSpaceAtPosition(row, col).appendChild(createCard("infantry"));
+                getCardSpaceAtPosition(row, col).appendChild(cardGenerator.createCard("infantry"));
 
             }
         }
