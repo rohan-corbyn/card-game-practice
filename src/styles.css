@@ -1,4 +1,3 @@
-/* styles.css */
 body {
   background-color: #698474;
   margin: 0;
@@ -36,6 +35,19 @@ body {
   align-items: center;
 }
 
+.card-space.resolving {
+  border-color: #FCF8F3;
+}
+
+.card-space.no-mans-grid {
+  background-color: #935e38;
+}
+
+
+.card-space.computer-grid {
+  background-color: #5a3419;
+}
+
 .card {
   background-color: rgb(144, 144, 144);
   height: 15vh;
@@ -50,33 +62,36 @@ body {
   align-items: center;
 }
 
+.card.computer {
+  background-color:#db8161;
+  color: #FCF8F3;
+}
+
 .card h2 {
   font-size: 2rem;
   margin: 0;
 }
 
-.card-image {
-  width: 30%;
+
+.card .card-image {
+  width: 50%;
   height: auto;
 }
 
-.card-image.computer {
+.card.computer .card-image {
   transform: rotateY(180deg);
 }
 
-.card.computer img {
-  width: 30%;
-  height: auto;
-  transform: rotateX(180deg);
-}
-
-
-.card .infantry {
+.card[card="infantry"] img {
   content: url("./img/infantry.png");
 }
 
-.card .archer {
+.card[card="archer"] img {
   content: url("./img/archer.png");
+}
+
+.card[card="trebuchet"] img{
+  content: url("./img/trebuchet.png");
 }
 
 #player-menu {

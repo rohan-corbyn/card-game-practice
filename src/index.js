@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { gameManager } from "./gameManager.js";
+import { manager } from "./manager.js";
 
-gameManager.initGame();
-gameManager.playGame();
+manager.initGame();
+manager.playGame();
