@@ -1,2 +1,2 @@
 # card game
-A turn based card game
+A WIP turn based card game.
