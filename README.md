@@ -1,2 +1,2 @@
-# ros-card-game
+# card game
 A turn based card game
